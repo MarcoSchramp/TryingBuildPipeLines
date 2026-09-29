@@ -25,3 +25,5 @@ jobs:
       run: ant -noinput -buildfile build.xml
     - name: Checkout the file system after build
       run: find .
+    - name: is a gcc compiler available
+      run: gcc --version
